@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.card {
+  background-color: #1483ea;
+  color: white;
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 1 / 1;
+  border-radius: 3rem;
+  padding: 3rem 3rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.contact-info {
+  margin-bottom: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.contact-info p {
+  margin-bottom: 0.5rem;
+}
+
+.button {
+  background-color: #f1a40e;
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 9999px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #e76f51;
+}
+
+.credit {
+  font-size: 1rem;
+  opacity: 0.75;
+  margin-bottom: 1.5rem;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 1rem;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .card {
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.25rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
+
+  .button {
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+  }
+
+  .credit {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-info {
+    font-size: 0.875rem;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .credit {
+    font-size: 0.75rem;
+  }
+}
